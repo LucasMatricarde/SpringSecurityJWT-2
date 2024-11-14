@@ -18,11 +18,6 @@ public class SecurityConfig {
     public static String KEY;
     public static Long EXPIRATION;
 
-    @Bean
-    public PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
-    }
-
     public static String getPREFIX() {
         return PREFIX;
     }
